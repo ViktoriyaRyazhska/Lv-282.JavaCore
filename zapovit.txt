@@ -1,2 +1,6 @@
 7. Bulo vydno bulo chuty
-9.
+<<<<<<< HEAD
+9.Yak 
+=======
+10. U sunie more
+>>>>>>> d292c4534935ff64fe73bd0bf11f338c471d7d9a
