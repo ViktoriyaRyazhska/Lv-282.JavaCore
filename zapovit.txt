@@ -1,4 +1,15 @@
+<<<<<<< HEAD
+
+Серед степу широкого
 8. Yak reve revuchyj.
+<<<<<<< HEAD
 
 
 9. Yak ponese z Ukrainu y sune More
+=======
+Кров ворожу... отойді я
+=======
+1. Yak umru to pohovaite
+8. Yak reve revuchyj.
+>>>>>>> 260a78d2d869ed0fa3b96ed8b5ea787484394500
+>>>>>>> d26019a46ef784ba10ddfa6d079a7098cb0d6270
