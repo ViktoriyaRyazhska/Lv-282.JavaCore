@@ -11,5 +11,6 @@
 =======
 1. Yak umru to pohovaite
 8. Yak reve revuchyj.
+6.I dnipro i kruchi
 >>>>>>> 260a78d2d869ed0fa3b96ed8b5ea787484394500
 >>>>>>> d26019a46ef784ba10ddfa6d079a7098cb0d6270
