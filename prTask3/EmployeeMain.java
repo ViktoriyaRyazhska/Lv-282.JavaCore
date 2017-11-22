@@ -5,7 +5,7 @@ public class EmployeeMain {
 	public static void main(String[] args) {
 		
 		Employee employee1 = new Employee("Anri", 2, 12);
-		Employee employee2 = new Employee("Dob", 4, 8);
+		Employee employee2 = new Employee("Bob", 4, 8);
 		Employee employee3 = new Employee("Candy", 9, 5);
 		System.out.println("Total salary is: " + Employee.showTotalSalary());
 		

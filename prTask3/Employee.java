@@ -32,9 +32,10 @@ public class Employee {
 	}
 	
 	public int salary() {
-		int salary = this.rate * this.hours;
+//		int salary = this.rate * this.hours;
 		totalSum += this.rate * this.hours;
-		return salary;
+		return (this.rate * this.hours);
+//		return salary;
 	}
 
 	
@@ -45,17 +46,15 @@ public class Employee {
 	}
 
 	public void changeRate(int rate) {
-		int oldRate = this.rate;
+		System.out.println("To " + this.name + " we change rate from " + this.rate + " to " + rate + " and now his salary is " + (rate * this.hours) );
+		totalSum += (rate - this.rate) * this.hours;
 		this.rate = rate;
-		totalSum = totalSum - oldRate*this.hours + this.rate * this.hours;
-		System.out.println("To " + this.name + " we change rate from " + oldRate + " to " + this.rate);
 	}
 	
 	public double bonuses() {
-		double salary;
-		salary = this.rate * this.hours * 1.1;
-		totalSum += this.rate * this.hours * 0.1;
-		return salary;
+		System.out.println("We give bonus for " + this.name + " and now his salary is " + (this.rate * this.hours * 1.1) );
+		totalSum -= this.rate * this.hours*0.9;
+		return salary()*1.1;
 	}
 
 	public static double showTotalSalary() {

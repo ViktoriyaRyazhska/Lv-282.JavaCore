@@ -1,5 +1,7 @@
 package homeTask3;
 
+import java.util.Calendar;
+
 public class Person {
 	
 	private String name;
@@ -26,8 +28,7 @@ public class Person {
 	}
 
 	public int age() {
-		int age = 2017 - this.birthYear;
-		return age;
+		return Calendar.getInstance().get(Calendar.YEAR) - this.birthYear;
 	}
 	
 	public void input(String name, int birthYear) {
