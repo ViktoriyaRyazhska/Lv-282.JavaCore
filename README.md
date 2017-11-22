@@ -1,7 +1,7 @@
 # Lv-282.JavaCore
 
-                        HW3
-                      Classes
+                           HW3
+                         Classes
                
 1. Marian Ben
 
@@ -9,7 +9,7 @@
 
 3. Volodymyr Femiak
 
-4. Ivan Burychka         +
+4. Ivan Burychka           +
 
 5. Oleh Hrybovs'kyi
 
