@@ -3,26 +3,24 @@
                            HW3
                          Classes
                
-1. Marian Ben
+Marian Ben
 
-2. Volodymyr Zhemela 
+Volodymyr Zhemela 
 
-3. Volodymyr Femiak
+Volodymyr Femiak
 
-4. Ivan Burychka           +
+Ivan Burychka           +
 
-5. Oleh Hrybovs'kyi
+Oleh Hrybovs'kyi
 
-6. Volodymyr Rasiak
+Volodymyr Rasiak
 
-7. Vitalii Rol's'kyi
+Vitalii Rol's'kyi
 
-8. Oleh Kolisnichenko
+Oleh Kolisnichenko
 
-9. Ihor Boiko
+Ihor Boiko
 
-10. Ostap Popovych
+Ostap Popovych
 
-11. Yuriy Kosura 
-
-
+Yuriy Kosura 
