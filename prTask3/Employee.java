@@ -48,7 +48,7 @@ public class Employee {
 
 	public void changeRate(int rate) {
 		System.out.println("To " + this.name + " we change rate from " + this.rate + " to " + rate + " and now his salary is " + (rate * this.hours) );
-		totalSum += salary(rate, this.hours) - salary(this.rate, this.hours);
+		totalSum += salary(rate - this.rate, this.hours);
 		this.rate = rate;
 	}
 	
