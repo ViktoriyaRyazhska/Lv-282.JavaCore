@@ -1,3 +1,4 @@
+package src;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -18,6 +19,7 @@ public class Address {
 		
 		System.out.println("Name: " + name);
 		System.out.println("Address: " + addr);
+		System.out.println("Hello");
 		
 	}
 
