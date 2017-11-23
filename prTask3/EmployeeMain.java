@@ -20,6 +20,7 @@ public class EmployeeMain {
 		employee2.bonuses();
 		System.out.println("Total salary is: " + Employee.showTotalSalary());
 		
+		employee1.salary();
 	}
 
 }

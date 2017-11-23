@@ -17,6 +17,7 @@ public class Employee {
 		this.name = name;
 		this.rate = rate;
 		this.hours = hours;
+		totalSum += rate*hours; 
 	}
 
 	public String getName() {
@@ -31,30 +32,29 @@ public class Employee {
 		return hours;
 	}
 	
-	public int salary() {
-//		int salary = this.rate * this.hours;
-		totalSum += this.rate * this.hours;
-		return (this.rate * this.hours);
-//		return salary;
+	public int salary(int rate, int hours) {
+		return (rate * hours);
 	}
 
+	public void salary() {
+		System.out.println("The employer " + this.name + " has salary " + salary(this.rate, this.hours));
+	}
 	
 	@Override
 	public String toString() {
 		return ("The employee " + this.name + " has rate " + this.rate + " worked " + hours + " hours"
-				+ " and have salary " + this.salary());
+				+ " and have salary " + this.salary(this.rate, this.hours));
 	}
 
 	public void changeRate(int rate) {
 		System.out.println("To " + this.name + " we change rate from " + this.rate + " to " + rate + " and now his salary is " + (rate * this.hours) );
-		totalSum += (rate - this.rate) * this.hours;
+		totalSum += salary(rate, this.hours) - salary(this.rate, this.hours);
 		this.rate = rate;
 	}
 	
-	public double bonuses() {
+	public void bonuses() {
 		System.out.println("We give bonus for " + this.name + " and now his salary is " + (this.rate * this.hours * 1.1) );
-		totalSum -= this.rate * this.hours*0.9;
-		return salary()*1.1;
+		totalSum += this.rate * this.hours*0.1;
 	}
 
 	public static double showTotalSalary() {
