@@ -23,11 +23,18 @@ public class CountryEnum {
 		case ("usa") :
 		case ("brazil"):
 			System.out.println(Continent.AMERICA);
+		break;
 		
+		case ("chad"):
+			System.out.println(Continent.AFRICA);
+		break;
+		
+		case ("india"):
+			System.out.println(Continent.ASIA);
 		break;
 		
 		default:
-		System.out.println(Continent.ANTARCTIDAA);
+		System.out.println(Continent.ANTARCTIDA);
 		
 		}
 		
