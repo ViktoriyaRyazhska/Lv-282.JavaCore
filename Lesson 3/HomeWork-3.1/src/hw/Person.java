@@ -37,7 +37,7 @@ public class Person {
 	}
 	
 	
-	public void changeName() throws IOException {
+	public void changeName(BufferedReader br) throws IOException {
 		System.out.println("Input new name for "+ this.name);
 		String name = br.readLine();
 		this.name = name;
@@ -60,9 +60,9 @@ public class Person {
 	}
 	
 
-	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	//BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	
-	public void input() throws IOException, ParseException {
+	public void input(BufferedReader br) throws IOException, ParseException {
 		System.out.println("Input name");
 		String name = br.readLine();
 		this.setName(name);
