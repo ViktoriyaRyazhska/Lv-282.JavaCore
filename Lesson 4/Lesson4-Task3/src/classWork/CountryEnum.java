@@ -27,7 +27,7 @@ public class CountryEnum {
 		break;
 		
 		default:
-		System.out.println(Continent.ANTARCTIDA);
+		System.out.println(Continent.ANTARCTIDAA);
 		
 		}
 		
