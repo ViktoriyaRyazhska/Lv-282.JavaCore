@@ -31,8 +31,8 @@ public class Dog {
 		String name1, name2;
 		
 		for (int i = 0; i < dogs.length - 1; i++) {
+			name1 = dogs[i].getName().toLowerCase();
 			for (int j = i + 1; j < dogs.length; j++) {
-				name1 = dogs[i].getName().toLowerCase();
 				name2 = dogs[j].getName().toLowerCase();
 				
 				if (name1.equals(name2)) {

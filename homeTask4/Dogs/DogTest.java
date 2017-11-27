@@ -30,6 +30,7 @@ class DogTest {
 		assertEquals(1, Dog.oldest(dog));
 	}
 	
+	@Test
 	public void testOldestDogLast() {
 		
 		dog[0] = new Dog("Archi", Breed.Bulldog, 11);
@@ -37,7 +38,7 @@ class DogTest {
 		dog[2] = new Dog("Cocker", Breed.Terrier, 3);
 		dog[3] = new Dog("Dorry", Breed.Foxhound, 21);
 		
-		assertEquals(21, Dog.oldest(dog));
+		assertEquals(3, Dog.oldest(dog));
 	}
 	
 	@Test
