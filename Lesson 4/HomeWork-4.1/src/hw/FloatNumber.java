@@ -14,6 +14,7 @@ public class FloatNumber {
 		
 	}
 	
+	public FloatNumber() {}
 	
 	public void compareFloat() {
 		if ((this.floatNumber>=-5)&&(this.floatNumber<=5)) {
@@ -22,6 +23,4 @@ public class FloatNumber {
 			System.out.println("You are out of range...");
 		}
 	}
-	
-
 }
