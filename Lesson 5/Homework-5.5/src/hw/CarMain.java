@@ -12,7 +12,7 @@ public class CarMain {
 
 		Car car1 = new Car(CarType.AUDI, 2003, 1.9);
 		Car car2 = new Car(CarType.AUDI, 2009, 2.5);
-		Car car3 = new Car(CarType.OPEL, 2011, 1.6);
+		Car car3 = new Car(CarType.OPEL, 2001, 1.6);
 		Car car4 = new Car(CarType.MERSEDES, 2015, 4.0);
 
 		Car[] cars = { car1, car2, car3, car4 };
@@ -40,9 +40,11 @@ public class CarMain {
 
 		for (int i = 0; i < cars.length; i++) {
 			for (int j = i + 1; j < cars.length; j++) {
-				tempCar = cars[i];
-				cars[i] = cars[j];
-				cars[j] = tempCar;
+				if (cars[i].getYear()>cars[j].getYear()) {
+					tempCar = cars[i];
+					cars[i] = cars[j];
+					cars[j] = tempCar;					
+				}
 			}
 		}
 
