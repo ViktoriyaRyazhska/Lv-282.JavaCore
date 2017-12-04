@@ -64,7 +64,7 @@ public class Cars {
 	
 	public static void displayCars(Cars[] car){
 		for (int i = 0; i < car.length; i++) {
-			System.out.println(car[i].toString());	
+			System.out.println(car[i]);	
 		}
 	}
 	
