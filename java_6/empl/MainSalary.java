@@ -13,6 +13,7 @@ public class MainSalary {
 		myEmployee.add(new ContractEmployee("Carmen", "000003", "Condor", "4987522156", 173.13, 35));
 		myEmployee.add(new SalariedEmployee("Dilan", "000004", "Danfoss", "2348897521", 14000));
 		myEmployee.add(new ContractEmployee("Endy", "000005", "Ergo",     "9530245796", 350.13, 50));
+		
 //		myEmployee.add(new SalariedEmployee("Freddy", "000006", "Fakro",  "4597871230", 9000));
 //		myEmployee.add(new SalariedEmployee("Georg", "000007", "Grand",  "9831456785", 3500));
 		
@@ -23,8 +24,6 @@ public class MainSalary {
 		printBySalary(myEmployee);
 		System.out.println("Genaral list");
 		printAll(myEmployee);
-		
-		
 		
 	}
 
@@ -39,25 +38,19 @@ public class MainSalary {
 	}
 	
 	private static ArrayList<Employee> sortBySalary(ArrayList<Employee> list){
-		Employee[] arrayEmployee = new Employee[list.size()];
 		Employee temp;
-		ArrayList<Employee> returnList = new ArrayList<Employee>();
 		
-		arrayEmployee = list.toArray(arrayEmployee); 
+		ArrayList<Employee> returnList = (ArrayList<Employee>) list.clone();
 		
-		for (int  i= 0; i < arrayEmployee.length - 1; i++) {
-			for (int j = i + 1; j < arrayEmployee.length; j++) {
-				if (((arrayEmployee[i]).calculatePay()) < ((arrayEmployee[j]).calculatePay())){
-					temp = arrayEmployee[i];
-					arrayEmployee[i] = arrayEmployee[j];
-					arrayEmployee[j] = temp;
+		for (int  i= 0; i < returnList.size() - 1; i++) {
+			for (int j = i + 1; j < returnList.size(); j++) {
+				if ( returnList.get(i).calculatePay() < returnList.get(j).calculatePay() ){
+					temp = returnList.get(i);
+					returnList.set(i, returnList.get(j));
+					returnList.set(j, temp);
 				}
 			}
 		}  
-		
-		for (int i = 0; i < arrayEmployee.length; i++) {
-			returnList.add(arrayEmployee[i]);
-		}
 		
 		return returnList;
 	}
