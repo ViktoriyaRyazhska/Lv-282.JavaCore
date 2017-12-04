@@ -2,7 +2,7 @@ package hw;
 
 import java.text.DecimalFormat;
 
-public class Employee implements CalculatePay {
+public abstract class Employee implements CalculatePay {
 
 	DecimalFormat df = new DecimalFormat("0.00");
 
@@ -42,11 +42,6 @@ public class Employee implements CalculatePay {
 	@Override
 	public String toString() {
 		return "id=" + id + ", name=" + name + ", ";
-	}
-
-	@Override
-	public double calculatePay() {
-		return 0;
 	}
 
 }
