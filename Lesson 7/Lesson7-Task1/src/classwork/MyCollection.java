@@ -33,8 +33,8 @@ public class MyCollection {
 		List<Integer> list = new ArrayList<Integer>();
 
 		for (Integer integer : collection) {
-			if (integer.intValue() > maxValue) {
-				list.add(integer);
+			if (integer < maxValue) {
+				list.add(collection.indexOf(integer));
 			}
 		}
 		return list;

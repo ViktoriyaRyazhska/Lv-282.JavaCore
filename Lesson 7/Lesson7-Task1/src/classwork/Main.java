@@ -26,7 +26,7 @@ public class Main extends MyCollection {
 		System.out.println(myCollection);
 		System.out.println();
 
-		System.out.println("My Collection without elements, smaller as 5:");
+		System.out.println("New Collection with indexes of elements, smaller as 5:");
 		System.out.println(getListIfBigger(myCollection, 5));
 		System.out.println();
 
