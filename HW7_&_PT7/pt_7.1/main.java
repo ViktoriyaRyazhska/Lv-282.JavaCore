@@ -1,6 +1,7 @@
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Random;
@@ -34,7 +35,9 @@ public class main {
 		System.out.println("myCollection elements after removing:");
 		System.out.println(myCollection);
 		
-//		myCollection.sort(ValueComparator());
+		Collections.sort(myCollection);
+		System.out.println("myCollection after sorting:");
+		System.out.println(myCollection);
 		   
 	}
 
@@ -45,11 +48,16 @@ public class main {
 	}
 	
 	public static void fillIndexToCollection (List<Integer> from, List<Integer> to) {
-		for (Integer integer : from) {
-			if (integer > 5) {
-				to.add(from.indexOf(integer) + 1);
-			}
-		}
+//		for (Integer integer : from) {
+//			if (integer > 5) {
+//				to.add(from.indexOf(integer) + 1);
+//			}
+//		}
+		Iterator<Integer> iterator = from.iterator();
+		   while(iterator.hasNext()){
+		      if(iterator.next() > 5)
+		    	  to.add(iterator.next());
+		   }  
 	}
 	
 	public static void removeFromCollection (List<Integer> numbers) {
@@ -60,9 +68,9 @@ public class main {
 		   }  
 	}
 	
-//	public class ValueComparator implements Comparator<Integer>{
+//	class Integer implements Comparable<Integer>{
 //	    @Override
-//	    public int compare(Integer o1, Integer o2) {
+//	    public int compareTo(Integer o1) {
 //	        return o1 - o2;
 //	    }
 //	}
