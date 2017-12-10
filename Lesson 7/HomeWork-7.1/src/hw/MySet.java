@@ -20,27 +20,34 @@ public class MySet {
 	public static Set union(Set set1, Set set2) {
 		Set unitedSet = new HashSet<>();
 
-		for (Object object : set1) {
-			unitedSet.add(object);
-		}
+		
+		unitedSet.addAll(set1);
+		unitedSet.addAll(set2);
 
-		for (Object object : set2) {
-			unitedSet.add(object);
-		}
+//		for (Object object : set1) {
+//			unitedSet.add(object);
+//		}
+//
+//		for (Object object : set2) {
+//			unitedSet.add(object);
+//		}
 
 		return unitedSet;
 	}
 
 	public static Set intersect(Set set1, Set set2) {
 		Set intersectedSet = new HashSet<>();
+		
+		intersectedSet.addAll(set1);
+		intersectedSet.retainAll(set2);
 
-		for (Object object1 : set1) {
-			for (Object object2 : set2) {
-				if (object1.equals(object2)) {
-					intersectedSet.add(object1);
-				}
-			}
-		}
+//		for (Object object1 : set1) {
+//			for (Object object2 : set2) {
+//				if (object1.equals(object2)) {
+//					intersectedSet.add(object1);
+//				}
+//			}
+//		}
 
 		return intersectedSet;
 	}
