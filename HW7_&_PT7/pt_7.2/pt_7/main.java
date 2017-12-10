@@ -36,8 +36,6 @@ public class main {
 	    System.out.println("\nEnter emloyee`s id:");
 	    int id = Integer.parseInt(br.readLine());
 	    
-//	    System.out.println(employeeMap.containsKey(id));
-	    
 	    int flag = 0;
 	    for ( Map.Entry<Integer, String> mEntry : employeeMap.entrySet()) {
 			if(mEntry.getKey() == id) {
@@ -45,7 +43,7 @@ public class main {
 				flag = 1;
 			}
 		}
-	   	    
+
 	    if(flag == 0)
 	    	System.out.println("There isn`t any value to this key");
 	    

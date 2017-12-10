@@ -67,12 +67,4 @@ public class main {
 		    	  iterator.remove();
 		   }  
 	}
-	
-//	class Integer implements Comparable<Integer>{
-//	    @Override
-//	    public int compareTo(Integer o1) {
-//	        return o1 - o2;
-//	    }
-//	}
-
 }

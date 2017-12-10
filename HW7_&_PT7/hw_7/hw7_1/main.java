@@ -1,4 +1,4 @@
-package hw7;
+package hw7_1;
 
 import java.util.HashSet;
 import java.util.Random;
