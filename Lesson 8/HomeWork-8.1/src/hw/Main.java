@@ -40,9 +40,6 @@ public class Main {
 		System.out.println("Second word reversed - " + reverse(2, strings));
 	}
 
-	
-	
-	
 	// check if we have more than 1 word with max length
 	public static void printLongesthWords(List<String> list) {
 		int maxsize = list.get(0).length();
@@ -54,13 +51,27 @@ public class Main {
 		}
 	}
 
-	
 	// the best solution to reverse String is by using StringBuilder.reverse()?
+
+	// public static String reverse(int index, String[] strings) {
+	// if (index <= strings.length) {
+	// sb = new StringBuilder(strings[index - 1]);
+	// return sb.reverse().toString();
+	// } else {
+	// return "impossible, we have only 1 word";
+	// }
+	// }
 
 	public static String reverse(int index, String[] strings) {
 		if (index <= strings.length) {
-			sb = new StringBuilder(strings[index - 1]);
-			return sb.reverse().toString();
+
+			char[] stringAarray = strings[index - 1].toCharArray();
+			char[] reversedArray = new char[strings[index - 1].length()];
+
+			for (int i = 0; i < reversedArray.length; i++) {
+				reversedArray[i] = stringAarray[reversedArray.length - i - 1];
+			}
+			return new String(reversedArray);
 		} else {
 			return "impossible, we have only 1 word";
 		}

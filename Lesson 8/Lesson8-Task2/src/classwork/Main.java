@@ -32,9 +32,7 @@ public class Main {
 
 	public static String readConsole(BufferedReader br) throws IOException {
 		System.out.println("Input your Surname Name Patronomic");
-		String stringConsole = br.readLine();
-
-		return stringConsole;
+		return br.readLine();
 	}
 
 	public static void splitString(String string, String separator) {

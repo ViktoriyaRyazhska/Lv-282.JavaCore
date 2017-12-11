@@ -25,9 +25,9 @@ public class Main {
 		// System.out.println("Input your string");
 		// String text = br.readLine();
 
-		String text = "I have $276.12. My friend has $12.00 USD. $1  $0.5  85.3 $12,03";
+		String text = "I have $276.12. My friend has $12.00 USD. $1.  $0.5  $85..3 $12,03 $1.,92 $7,.08";
 
-		Pattern p = Pattern.compile("\\$(\\d)+((\\.)?(\\,)?\\d{1,2})?");
+		Pattern p = Pattern.compile("\\$(\\d)+((.|,)\\d{1,2})?");
 
 		Matcher m = p.matcher(text);
 
