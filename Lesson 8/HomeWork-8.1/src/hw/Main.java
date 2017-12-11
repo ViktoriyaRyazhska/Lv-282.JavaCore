@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Iterator;
 import java.util.List;
 
 public class Main {
@@ -31,24 +32,36 @@ public class Main {
 			list.add(string);
 		}
 
-		sortByLength(list);
+	//	sortByLength(list);
 		System.out.println();
 
-		printLongesthWords(list);
+		printLongestWords(list);
 		System.out.println();
 
 		System.out.println("Second word reversed - " + reverse(2, strings));
 	}
 
 	// check if we have more than 1 word with max length
-	public static void printLongesthWords(List<String> list) {
-		int maxsize = list.get(0).length();
+	public static void printLongestWords(List<String> list) {
+		int maxsize = findLongestWord(list).length();
 		System.out.println("Longest words (" + maxsize + " symbols):");
 		for (String string : list) {
 			if (string.length() == maxsize) {
 				System.out.println(string);
 			}
 		}
+	}
+
+	public static String findLongestWord(List<String> list) {
+		Iterator<String> i = list.iterator();
+		String longestWord = list.get(0);
+		while (i.hasNext()) {
+			String currentWord = i.next();
+			if (currentWord.length() > longestWord.length()) {
+				longestWord = currentWord;
+			}
+		}
+		return longestWord;
 	}
 
 	// the best solution to reverse String is by using StringBuilder.reverse()?
