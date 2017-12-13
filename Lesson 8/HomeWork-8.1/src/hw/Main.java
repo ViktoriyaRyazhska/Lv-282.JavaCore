@@ -32,7 +32,7 @@ public class Main {
 			list.add(string);
 		}
 
-	//	sortByLength(list);
+		// sortByLength(list);
 		System.out.println();
 
 		printLongestWords(list);
