@@ -46,7 +46,12 @@ public class Main {
 		private static final long serialVersionUID = 7210575106269075116L;
 
 		public NoMeasureExcepion() {
+			super();
+		}
 
+		
+		public NoMeasureExcepion(String message) {
+			super(message);
 		}
 
 		@Override

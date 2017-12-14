@@ -39,7 +39,7 @@ public class Main {
 		} catch (ColorException e) {
 			System.out.println(e.toString());
 		} catch (TypeException e) {
-			System.err.println(e.toString());
+			System.out.println(e.toString());
 		}
 		
 		
@@ -61,25 +61,3 @@ public class Main {
 }
 
 
-//Create a class Plants, 
-//which includes fields int size,
-//Color color and Type type, 
-//and constructor where these fields are initialized.
-//Color and type are Enum. 
-//Override the method toString( ).
-//Create classes ColorException and TypeException and describe there all possible colors and types of plants. 
-//In the method main create an array of five plants. Check to work your exceptions.
-
-
-
-//
-//4.
-//public static void main(String[] args) {
-//   try {
-//      Plant pl = new Plant("rose", "blue", 5);
-//      System.out.println(pl);
-//   } catch (ColorException | TypeException e) {
-//      System.err.println(e.getMessage() + "\n");
-//      //e.printStackTrace();
-//   }
-//}

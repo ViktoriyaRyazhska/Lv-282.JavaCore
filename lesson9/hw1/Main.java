@@ -15,7 +15,7 @@ public class Main {
 		} catch (NumberFormatException e) {
 			System.err.println("You input wrong value");
 		} catch (DivideToZeroException e) {
-			System.err.println(e);
+			System.err.println(e.toString());
 		} catch (IOException e) {
 			System.err.println("Somethink wrong");
 		}
@@ -28,7 +28,7 @@ public class Main {
 		int b = getInt();
 
 		if (b == 0) {
-			throw new DivideToZeroException();
+			throw new DivideToZeroException("Don't divide to zero");
 		} else {
 			return a / b;
 		}

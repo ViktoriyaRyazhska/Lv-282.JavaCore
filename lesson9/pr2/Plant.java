@@ -22,16 +22,7 @@ public class Plant {
 		case "white":
 			return Color.White;
 		default:
-			throw new ColorException() {
-				
-				private static final long serialVersionUID = 7336709814401436207L;
-
-				@Override
-				public String toString() {
-					return "You choose color - " + color + ". You should take only color blue, red or white";
-				}
-				
-			};
+			throw new ColorException("You choose color - " + color + ". You should take only color blue, red or white");
 		}
 	}
 

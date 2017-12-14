@@ -13,10 +13,10 @@ public class ColorException extends Exception{
 		
 	}
 
-	@Override
-	public String toString() {
-		return "ColorException []";
-	}
+//	@Override
+//	public String toString() {
+//		return "ColorException []";
+//	}
 	
 	
 }
