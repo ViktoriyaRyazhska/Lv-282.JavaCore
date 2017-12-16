@@ -63,7 +63,7 @@ public class main {
 		return maxL;
 	}
 	
-	public static String parseWordToDifLetters (String wrd) {
+	public static List<Character> parseWordToDifLetters (String wrd) {
 
 		List<Character> difLet = new ArrayList<Character>();
 		char[] c = wrd.toCharArray();
@@ -81,27 +81,27 @@ public class main {
 			if(flag == 0)
 				difLet.add(c[i]);
 		}
-		
-		return difLet.toString();
+				
+		return difLet;
 		
 	}
 	
 	public static void lettersCount (String wrd) {
 		
-		String parseWrd = new String();
-		parseWrd = parseWordToDifLetters(wrd);
+		List<Character>  parseWrd = parseWordToDifLetters(wrd);
 		char[] c = wrd.toCharArray();
-		char[] parseC = parseWrd.toCharArray();
 		int num = 0;
 		
-		for (int i = 0; i < parseC.length; i++) {
+		for (int i = 0; i < parseWrd.size(); i++) {
 			for (int j = 0; j < c.length; j++) {
-				if(parseC[i] == c[j])
+				if(parseWrd.get(i) == c[j])
 					num++;
 			}
-			System.out.println("Letter " + parseC[i] + " is repeated " + num + " times");
+			System.out.println("Letter " + parseWrd.get(i)  + " is repeated " + num + " times");
 			num = 0;
 		}
 	}
 
+	
+	
 }
