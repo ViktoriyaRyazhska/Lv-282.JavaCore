@@ -1,0 +1,4 @@
+9
+Create file1.txt file with a text about your career.
+My name is Ivan Burychka 
+Date of Birth: 14.05.1983
