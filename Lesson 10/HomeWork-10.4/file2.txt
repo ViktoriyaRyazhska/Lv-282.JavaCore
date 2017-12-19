@@ -1,0 +1,3 @@
+Number of lines in file1.txt - 2
+The longest line: I study JavaCore course in SoftServe IT Academy
+Vitaliy Rolskyi, 04.04.1990
